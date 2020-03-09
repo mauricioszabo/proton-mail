@@ -48,6 +48,7 @@ const Item = ({ labelID, labels, element, elementID, mailSettings = {}, checked 
         onClick(ID);
     };
 
+    // console.log(lol)
     return (
         <div
             onClick={clickHandler}
@@ -61,6 +62,7 @@ const Item = ({ labelID, labels, element, elementID, mailSettings = {}, checked 
             <ItemCheckbox className="mr1 item-checkbox" checked={checked} onChange={onCheck}>
                 {getInitial(displayRecipients ? recipients[0] : senders[0])}
             </ItemCheckbox>
+            <window.components.lol foo="bar" />
             <ItemLayout
                 labels={labels}
                 element={element}
