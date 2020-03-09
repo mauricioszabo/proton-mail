@@ -1,0 +1,10 @@
+;; shadow-cljs configuration
+{:source-paths ["src/cljs"]
+
+ :dependencies [[reagent "0.10.0"]]
+
+ :builds {:react {:target :browser
+                  :output-dir "dist/js"
+                  :asset-path "/"
+                  :modules {:main {:init-fn proton.core/main}}}}}
+                  ; :exports-var proton.core/components}}}
